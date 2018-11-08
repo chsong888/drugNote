@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.chs.wxsmall.mapper.HomeStockMapper" >
+  <resultMap id="BaseResultMap" type="com.chs.wxsmall.model.HomeStock" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="stock_id" property="stockId" jdbcType="VARCHAR" />
+    <result column="drup_id" property="drupId" jdbcType="VARCHAR" />
+    <result column="product_start_date" property="productStartDate" jdbcType="VARCHAR" />
+    <result column="product_end_date" property="productEndDate" jdbcType="VARCHAR" />
+    <result column="validity_date" property="validityDate" jdbcType="VARCHAR" />
+    <result column="surplus_num" property="surplusNum" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>
