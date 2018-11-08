@@ -35,7 +35,7 @@ create table drup_price
       ,price               varchar(50)         comment'价格' 
 );
 
-/**药品价格信息表**/
+/**药品店信息表**/
 create table store_info
 (
        store_id            varchar(50)         comment'购买地ID'
@@ -44,6 +44,86 @@ create table store_info
 
 
 
+/**********************************************功能查询SQL**************************/
+/**首页面**/
+select
+         a.drup_id     
+        ,a.drug_brand  
+        ,a.drug_cn_name
+        ,a.drug_en_name
+        ,a.drup_type   
+        ,a.drup_spec   
+        ,a.drup_agent  
+        ,a.drup_manu   
+        ,a.approval_num
+        ,a.bar_code    
+        ,a.drup_pic          
+        ,b.drup_id    
+        ,sum(b.surplus_num)  /**剩余总数量**/
+ from
+         drug_info   a
+left join
+         home_stock  b
+       on a.drup_id = b.drup_id  
+/**药箱详细页面**/
+
+/**家庭剩余详细**/
+select
+         a.drup_id     
+        ,a.drug_brand  
+        ,a.drug_cn_name
+        ,a.drug_en_name
+        ,a.drup_type   
+        ,a.drup_spec   
+        ,a.drup_agent  
+        ,a.drup_manu   
+        ,a.approval_num
+        ,a.bar_code    
+        ,a.drup_pic          
+        ,b.drup_id           
+        ,b.product_start_date
+        ,b.product_end_date  
+        ,b.validity_date     
+        ,b.surplus_num       
+ from
+         drug_info   a
+left join
+         home_stock  b
+       on a.drup_id = b.drup_id  
+where 
+       a.a.drup_id=?
+
+/**各地价格详细**/    
+select
+         a.drup_id     
+        ,a.drug_brand  
+        ,a.drug_cn_name
+        ,a.drug_en_name
+        ,a.drup_type   
+        ,a.drup_spec   
+        ,a.drup_agent  
+        ,a.drup_manu   
+        ,a.approval_num
+        ,a.bar_code    
+        ,a.drup_pic          
+        ,c.store_id  
+        ,c.store_name
+        ,b.price_id 
+        ,b.drup_id  
+        ,b.store_id 
+        ,b.buy_store
+        ,b.price    
+
+ from
+         drug_info   a
+left join 
+         drup_price  b
+      on a.drup_id = b.drup_id
+left join 
+         store_info  c
+      on b.store_id = c.store_id
+where 
+      a.a.drup_id=?
 
 
 
