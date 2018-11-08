@@ -1,7 +1,16 @@
 package com.chs.wxsmall.mapper;
 
-import com.chs.wxsmall.model.HomeStock;
-import com.chs.wxsmall.utils.MyBaseMapper;
+import com.chs.wxsmall.entity.HomeStock;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-public interface HomeStockMapper extends MyBaseMapper<HomeStock> {
+/**
+ * <p>
+ *  Mapper 接口
+ * </p>
+ *
+ * @author chensong
+ * @since 2018-11-08
+ */
+public interface HomeStockMapper extends BaseMapper<HomeStock> {
+
 }

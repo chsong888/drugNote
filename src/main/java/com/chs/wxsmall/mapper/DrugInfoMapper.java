@@ -1,7 +1,16 @@
 package com.chs.wxsmall.mapper;
 
-import com.chs.wxsmall.model.DrugInfo;
-import com.chs.wxsmall.utils.MyBaseMapper;
+import com.chs.wxsmall.entity.DrugInfo;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-public interface DrugInfoMapper extends MyBaseMapper<DrugInfo> {
+/**
+ * <p>
+ *  Mapper 接口
+ * </p>
+ *
+ * @author chensong
+ * @since 2018-11-08
+ */
+public interface DrugInfoMapper extends BaseMapper<DrugInfo> {
+
 }

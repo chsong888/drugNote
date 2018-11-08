@@ -1,8 +1,8 @@
 package com.chs.wxsmall.service.impl;
 
-import com.chs.wxsmall.entity.DrugInfo;
-import com.chs.wxsmall.mapper.DrugInfoMapper;
-import com.chs.wxsmall.service.IDrugInfoService;
+import com.chs.wxsmall.entity.HomeStock;
+import com.chs.wxsmall.mapper.HomeStockMapper;
+import com.chs.wxsmall.service.IHomeStockService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2018-11-08
  */
 @Service
-public class DrugInfoServiceImpl extends ServiceImpl<DrugInfoMapper, DrugInfo> implements IDrugInfoService {
+public class HomeStockServiceImpl extends ServiceImpl<HomeStockMapper, HomeStock> implements IHomeStockService {
 
 }

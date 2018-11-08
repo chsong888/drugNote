@@ -1,7 +1,16 @@
 package com.chs.wxsmall.mapper;
 
-import com.chs.wxsmall.model.StoreInfo;
-import com.chs.wxsmall.utils.MyBaseMapper;
+import com.chs.wxsmall.entity.StoreInfo;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-public interface StoreInfoMapper extends MyBaseMapper<StoreInfo> {
+/**
+ * <p>
+ *  Mapper 接口
+ * </p>
+ *
+ * @author chensong
+ * @since 2018-11-08
+ */
+public interface StoreInfoMapper extends BaseMapper<StoreInfo> {
+
 }

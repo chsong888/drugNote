@@ -1,11 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.chs.wxsmall.mapper.StoreInfoMapper" >
-  <resultMap id="BaseResultMap" type="com.chs.wxsmall.model.StoreInfo" >
-    <!--
-      WARNING - @mbg.generated
-    -->
-    <result column="store_id" property="storeId" jdbcType="VARCHAR" />
-    <result column="store_name" property="storeName" jdbcType="VARCHAR" />
-  </resultMap>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chs.wxsmall.mapper.StoreInfoMapper">
+
 </mapper>
