@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.chs.wxsmall.mapper.DrugInfoMapper">
-  <resultMap id="BaseResultMap" type="com.chs.wxsmall.model.DrugInfo">
-    <!--
-      WARNING - @mbg.generated
-    -->
-    <result column="drup_id" jdbcType="VARCHAR" property="drupId" />
-    <result column="drug_brand" jdbcType="VARCHAR" property="drugBrand" />
-    <result column="drug_cn_name" jdbcType="VARCHAR" property="drugCnName" />
-    <result column="drug_en_name" jdbcType="VARCHAR" property="drugEnName" />
-    <result column="drup_type" jdbcType="VARCHAR" property="drupType" />
-    <result column="drup_spec" jdbcType="VARCHAR" property="drupSpec" />
-    <result column="drup_agent" jdbcType="VARCHAR" property="drupAgent" />
-    <result column="drup_manu" jdbcType="VARCHAR" property="drupManu" />
-    <result column="approval_num" jdbcType="VARCHAR" property="approvalNum" />
-    <result column="bar_code" jdbcType="VARCHAR" property="barCode" />
-    <result column="drup_pic" jdbcType="VARCHAR" property="drupPic" />
-  </resultMap>
-  <sql id="Base_Column_List">
-    drup_id,drug_brand,drug_cn_name,drug_en_name,drup_type,drup_spec,drup_agent,drup_manu,approval_num,bar_code,drup_pic
-  </sql>
+
 </mapper>

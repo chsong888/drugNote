@@ -1,16 +1,9 @@
 package com.chs.wxsmall.model.response;
 
+import com.chs.wxsmall.entity.StoreInfo;
 import lombok.Data;
 
 @Data
-public class StoreInfoResponse {
-    /**
-     * 购买地ID
-     */
-    private String storeId;
+public class StoreInfoResponse extends StoreInfo{
 
-    /**
-     * 店名称
-     */
-    private String storeName;
 }
