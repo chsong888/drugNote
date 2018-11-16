@@ -34,8 +34,8 @@ public class SwaggerConfig {
         return new ApiInfoBuilder()
                 .title("springboot Swagger 测试")
                 .description("Springboot 整合Swagger2")
-                .termsOfServiceUrl("localhost:8080/ruleengine")
-                .contact(new Contact("Swagger测试","localhost:8080/ruleengine/swagger-ui.html","baidu@qq.com"))
+                .termsOfServiceUrl("localhost:7070/drugNote")
+                .contact(new Contact("Swagger测试","localhost:7070/drugNote/swagger-ui.html","baidu@qq.com"))
                 .version("1.0")
                 .build();
     }
